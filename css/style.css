@@ -189,6 +189,46 @@ span.glyphicon.glyphicon-pushpin {
   margin-top: 0.5em;
 
 }
+
+.mui-container {
+  text-align: left;
+  padding: 4em 0;
+  background: #2A363B;
+  color: #2A363B;
+ }
+
+ .mui-panel {
+  text-align: left;
+  padding: 4em 0;
+  background: #2A363B;
+  color: #E84A5F;
+
+ }
+
+ .mui-btn {
+  text-align: left;
+  padding: 4em 0;
+  background: #2A363B;
+  color: #2A363B;
+ }
+
+ .mui-btn--primary {
+  text-align: left;
+  padding: 4em 0;
+  background: #2A363B;
+  color: #2A363B;
+ }
+
+.mui-btn--raised {
+  text-align: left;
+  padding: 4em 0;
+  background: #2A363B;
+  color: #2A363B;
+ }
+
+
+
+
 /*-- gallery --*/
 .gallery h3{
   font-size: 3em;  
