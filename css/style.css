@@ -198,33 +198,38 @@ span.glyphicon.glyphicon-pushpin {
  }
 
  .mui-panel {
-  text-align: left;
-  padding: 4em 0;
+  text-align: left;  
   background: #2A363B;
   color: #E84A5F;
 
  }
 
  .mui-btn {
-  text-align: left;
-  padding: 4em 0;
+  text-align: left;  
   background: #2A363B;
   color: #2A363B;
  }
 
  .mui-btn--primary {
-  text-align: left;
-  padding: 4em 0;
+  text-align: left;  
   background: #2A363B;
   color: #2A363B;
  }
 
 .mui-btn--raised {
-  text-align: left;
-  padding: 4em 0;
+  text-align: left;  
   background: #2A363B;
   color: #2A363B;
  }
+
+ .remove{
+  text-align: left;  
+  background: #2A363B;
+  color: #E84A5F;
+ }
+ }
+
+
 
 
 
