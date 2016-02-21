@@ -38,7 +38,7 @@ function show() {
     var html = '<div><h5>' + today + '</h5><ul class="collection border-none">';
     var tasks = todos[4].days[0].content
     for(var i=0; i<tasks.length; i++) {
-        html += '<button class="remove" id="' + i  + '">x</button><li class="collection-item avatar list-items list_item_form">' + tasks[i].time + " " + tasks[i].task + '</li><br />';
+        html += '<button class="remove" id="' + i  + '">x</button><li class="collection-item avatar list-items list_item_form" style="min-height: 30px !important;padding-left: 20px !important;display: inline-flex;border-bottom: none">' + tasks[i].time + " " + tasks[i].task + '</li><br />';
     };
     html += '</ul>';
 
