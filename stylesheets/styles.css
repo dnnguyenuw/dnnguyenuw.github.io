@@ -53,7 +53,9 @@
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'),
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
-
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
 
 .navbar-default {
     background-color: rgba(000,000,000,0.65);

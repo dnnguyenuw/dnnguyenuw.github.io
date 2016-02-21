@@ -17,7 +17,7 @@
 <script type="text/javascript" src="js/easing.js"></script>
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
+			$(".scroll").click(function(event){
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
@@ -49,7 +49,7 @@
 						<li><a href="#home" class="active scroll"></a></li>
 						<li><a href="#aboutus" class="scroll">Learn More</a></li>
 						<li><a href="#services" class="scroll">Services</a></li>
-						<li><a href="#gallery" class="scroll">Start Tracking!</a></li>											
+						<li><a href="#gallery" class="scroll">Start Tracking!</a></li>
 						<li><a href="#contact" class="scroll">Contact Us</a></li>
 					</ul>
 				</div>
@@ -60,7 +60,7 @@
 						 });
 						 });
 						 </script>
-		 
+
 						<div class="clearfix"></div>
 			</div>
 		</div>
@@ -76,12 +76,14 @@
 								<p>We offer a unique &amp; valuable service to doctors/patients interested in our product.</p>
 							</div>
 							<div class="col-md-4 about-grid">
-								<img src="images/p2.jpg"  class="img-responsive" alt="">
+                <a href="./diet.html">
+								<img src="images/p2.jpg"  class="img-responsive" alt=""></a>
 								<h4>Dietary Tracking</h4>
 								<p>We offer dietary tracking for doctors and patients to ensure goals and health restrictions are adhered to.</p>
 							</div>
 							<div class="col-md-4 about-grid">
-								<img src="images/p3.jpg"  class="img-responsive" alt="">
+                <a href="./prescription.html">
+								<img src="images/p3.jpg"  class="img-responsive" alt=""></a>
 								<h4>Track Prescriptions!</h4>
 								<p>Access data tracked regarding current and previous prescriptions to renew medication on schedule.</p>
 							</div>
@@ -128,7 +130,7 @@
 							<div class="col-md-6 service-rightgrid">
 								<div class="service1">
 									<div class="left-grid1">
-										<span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>								
+										<span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
 										</div>
 									<div class="left-grid2">
 										<h4>Vaccine History </h4>
@@ -138,7 +140,7 @@
 								</div>
 								<div class="service2">
 									<div class="left-grid1">
-										<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>							
+										<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
 									</div>
 									<div class="left-grid2">
 										<h4> Prescribed Medicine </h4>
@@ -204,7 +206,7 @@
 							</div>
 						</a>
 					</li>
-					<li>	
+					<li>
 						<a href="images/g5.gif" rel="title" class="b-link-stripe b-animate-go  thickbox">
 							<img src="images/g5.gif" alt="" />
 							<div>
@@ -221,14 +223,14 @@
 								<span>Monitor past prescriptions to determine whether they need to be renewed, &amp; add prescribed medicine to this list in real-time.</span>
 							</div>
 						</a>
-					</li>					
+					</li>
 					<div class="clearfix"> </div>
 				</ul>
 			</section>
-			<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+			<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
 		<script type="text/javascript">
 			$(function() {
-			
+
 				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 
 			});
@@ -246,7 +248,7 @@
 						<div class="contact-grid">
 						<div class="col-md-6 contactdetails-grid">
 						<h4>Contact Form</h4>
-               				
+
 							<h5>Name <span>*</span></h5>
                					<form>
 								<input type="text">
@@ -265,10 +267,10 @@
                			    <p>845 Rue Sherbrooke O, </p>
 							   <p>Montréal, QC H3A 0G4</p>
 								  <p>McHacks Canada</p>
-				   					<p>Phone: +1 (647) 785 9254</p>				   						
-				 	 						<p>Email: <a href="mailto:a6sivana@uwaterloo.ca">support@meditrack.tech</a></p>				   								
+				   					<p>Phone: +1 (647) 785 9254</p>
+				 	 						<p>Email: <a href="mailto:a6sivana@uwaterloo.ca">support@meditrack.tech</a></p>
 				  							</div>
-				  							
+
 				   						</div>
 										<div class="clearfix"> </div>
                					</div>
@@ -287,12 +289,12 @@
 					  			containerID: 'toTop', // fading element id
 								containerHoverID: 'toTopHover', // fading element hover id
 								scrollSpeed: 1200,
-								easingType: 'linear' 
+								easingType: 'linear'
 					 		};
 							*/
-							
+
 							$().UItoTop({ easingType: 'easeOutQuart' });
-							
+
 						});
 					</script>
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
