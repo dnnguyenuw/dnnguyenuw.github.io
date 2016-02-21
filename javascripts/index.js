@@ -31,9 +31,9 @@ function remove() {
 function show() {
     var todos = get_todos();
 
-    var html = '<ul>';
+    var html = '<ul class="collection border-none">';
     for(var i=0; i<todos.length; i++) {
-        html += '<li>' + todos[i] + '<button class="remove" id="' + i  + '">x</button></li><br />';
+        html += '<button class="remove" id="' + i  + '">x</button><li class="collection-item avatar list-items">' + todos[i] + '</li><br />';
     };
     html += '</ul>';
 
