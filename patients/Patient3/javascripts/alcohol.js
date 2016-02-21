@@ -21,7 +21,7 @@ function remove() {
     var id = this.getAttribute('id');
     var todos = get_todos();
     (todos[1].days[0].content).splice(id, 1);
-    localStorage.setItem('patient2', JSON.stringify(todos));
+    localStorage.setItem('patient3', JSON.stringify(todos));
 
     show();
 
