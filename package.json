@@ -1,0 +1,25 @@
+{
+  "name": "mchacks2016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnnguyenuw/mchacks2016.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnnguyenuw/mchacks2016/issues"
+  },
+  "homepage": "https://github.com/dnnguyenuw/mchacks2016",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.4",
+    "nodemon": "^1.9.0"
+  }
+}

@@ -30,10 +30,11 @@ function remove() {
 
 function show() {
     var todos = get_todos();
-
-    var html = '<ul class="collection border-none">';
+    var now = moment().format('MMMM Do YYYY, h:mm:ss a');
+    var today = moment().format('MMM Do YY');
+    var html = '<div>' + today + '<ul class="collection border-none">';
     for(var i=0; i<todos.length; i++) {
-        html += '<button class="remove" id="' + i  + '">x</button><li class="collection-item avatar list-items">' + todos[i] + '</li><br />';
+        html += '<button class="remove" id="' + i  + '">x</button><li class="collection-item avatar list-items">' + now + " " + todos[i] + '</li><br />';
     };
     html += '</ul>';
 
