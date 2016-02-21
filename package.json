@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dnnguyenuw/mchacks2016.git"
+    "url": "git+https://github.com/dnnguyenuw/mchacks2016.git"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +21,6 @@
     "express": "^4.13.4",
     "mongoose": "^4.4.4",
     "nodemon": "^1.9.0"
-  }
+  },
+  "devDependencies": {}
 }

@@ -1,7 +1,14 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
+app.get('/kitty', function (req, res) {
+  // do biz logic
+  // var kitty = new cat({})
+  // kitty.save()
+
+
+  // Cat.findById(id);
+  // Cat.find({ name: "Kitt"}, function() {})
   res.send('Hello World!');
 });
 
