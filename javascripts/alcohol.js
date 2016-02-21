@@ -1,9 +1,7 @@
 function get_todos() {
-    var todos = new Array;
-    var todos_str = localStorage.getItem('alcohol');
-    if (todos_str !== null) {
-        todos = JSON.parse(todos_str);
-    }
+    var todos = createNewPatient();
+    console.log("IN TODOS")
+    console.log(todos);
     return todos;
 }
 
@@ -12,8 +10,7 @@ function add() {
     var now = moment().format('LT');
     var todos = get_todos();
     var createTask = {'task': task, 'time': now}
-    todos.push(createTask);
-    localStorage.setItem('alcohol', JSON.stringify(todos));
+    addNewRecord('alcohol', createTask)
     show();
 
     return false;
@@ -22,8 +19,8 @@ function add() {
 function remove() {
     var id = this.getAttribute('id');
     var todos = get_todos();
-    todos.splice(id, 1);
-    localStorage.setItem('alcohol', JSON.stringify(todos));
+    (todos[1].days[0].content).splice(id, 1);
+    localStorage.setItem('patient', JSON.stringify(todos));
 
     show();
 
@@ -32,10 +29,15 @@ function remove() {
 
 function show() {
     var todos = get_todos();
+    debugger;
+    if(todos[1].days.length === 0){
+      return;
+    }
     var today = moment().format('LL');
     var html = '<div>' + today + '<ul class="collection border-none">';
-    for(var i=0; i<todos.length; i++) {
-        html += '<button class="remove" id="' + i  + '">x</button><li class="collection-item avatar list-items">' + todos[i].time + " " + todos[i].task + '</li><br />';
+    var tasks = todos[1].days[0].content
+    for(var i=0; i<tasks.length; i++) {
+        html += '<button class="remove" id="' + i  + '">x</button><li class="collection-item avatar list-items">' + tasks[i].time + " " + tasks[i].task + '</li><br />';
     };
     html += '</ul>';
 
