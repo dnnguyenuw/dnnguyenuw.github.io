@@ -139,3 +139,12 @@ li {
 .border-none{
   border: none !important;
 }
+.collection{
+    min-height: 30px;
+    padding-left: 0px;
+}
+.items{
+  min-height: 30px !important;
+  padding-left: 0px !important;
+  display: inline-flex;
+}

@@ -143,6 +143,16 @@ li {
   text-align: center;
   background-color: #2A363B;
 }
-admin-font{
+.admin-font{
   margin-top: 0 px !important;
+}
+.collection{
+    min-height: 30px;
+    padding-left: 20px;
+}
+
+.list_item_form {
+  min-height: 30px !important;
+  padding-left: 20px !important;
+  display: inline-flex;
 }
