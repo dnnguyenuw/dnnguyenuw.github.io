@@ -7,6 +7,7 @@ function get_todos() {
 
 function add() {
     var task = document.getElementById('task').value;
+    document.getElementById('task').value = ""
     var now = moment().format('LT');
     var todos = get_todos();
     var createTask = {'task': task, 'time': now}
